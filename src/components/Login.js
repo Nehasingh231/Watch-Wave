@@ -43,10 +43,11 @@ const Login = () => {
             email: email, 
             displayName: displayName,
             photoURL: photoURL,
-            }));
-      
+            })
+          );
       navigate("/browse");   //navigate is using for when we sign in/sign up it come to browse page
-    }).catch((error) => {
+    })
+    .catch((error) => {
        setErrorMessage(error.message);
     }); 
  })
